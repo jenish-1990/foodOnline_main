@@ -1,0 +1,8 @@
+<!-- prettier-ignore -->
+{% for field in form %} 
+        {% if field.errors %} 
+            {% for error in field.errors %}
+<li>
+  <div class="alert alert-danger" role="alert">{{error}}</div>
+</li>
+{% endfor %} {% endif %} {% endfor %}
