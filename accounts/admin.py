@@ -6,7 +6,7 @@ from django.contrib.auth.admin import UserAdmin
 
 # To make password field non editable
 class CustomUserAdmin(UserAdmin):
-    list_display = ('email', 'first_name', 'last_name', 'username', 'role', 'is_admin') # What to display on user model
+    list_display = ('email', 'first_name', 'last_name', 'username', 'role', 'is_active') # What to display on user model
     ordering = ('-date_joined',) # Descending order of display
     filter_horizontal = ()
     list_filter = ()
