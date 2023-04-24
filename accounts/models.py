@@ -45,11 +45,11 @@ class UserManager(BaseUserManager): # contains methods
 
 
 class User(AbstractBaseUser): # contains fields
-    RESTAURANT = 1
+    VENDOR = 1
     CUSTOMER = 2
 
     ROLE_CHOICE = (
-        (RESTAURANT, 'Restaurant'),
+        (VENDOR, 'Vendor'),
         (CUSTOMER, 'Customer'),
     )
 
