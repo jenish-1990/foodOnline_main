@@ -14,7 +14,9 @@
         >
       </li>
       <li class="{% if 'menu-builder' in request.path %}active{% endif %}">
-        <a href="#"><i class="icon-menu5"></i>Menu Builder</a>
+        <a href="{% url 'menu_builder' %}"
+          ><i class="icon-menu5"></i>Menu Builder</a
+        >
       </li>
       <li class="{% if 'opening-hour' in request.path %}active{% endif %}">
         <a href="#"><i class="icon-menu5"></i>Opening Hours</a>
