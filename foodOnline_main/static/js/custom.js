@@ -72,6 +72,8 @@ function onPlaceChanged() {
   }
 }
 
+// Cart and other functionalities
+
 $(document).ready(function () {
   // add to cart
   $(".add_to_cart").on("click", function (e) {
@@ -79,6 +81,7 @@ $(document).ready(function () {
 
     food_id = $(this).attr("data-id");
     url = $(this).attr("data-url");
+    // var cart_counter = document.getElementById("cart_counter").innerHTML;
 
     $.ajax({
       type: "GET",

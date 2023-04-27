@@ -1,4 +1,9 @@
-{% extends 'base.html' %} {% load static %} {% block content %}
+<!-- prettier-ignore -->
+{% extends 'base.html' %} 
+
+{% load static %} 
+
+{% block content %}
 
 <!-- Main Section Start -->
 <div class="main-section">
@@ -24,6 +29,7 @@
                   </div>
                 </div>
               </div>
+
               <div class="listing simple">
                 <ul>
                   {% for vendor in vendors %}
@@ -70,7 +76,9 @@
                           >{{ vendor.user_profile.address }}</small
                         ></span
                       >
-                      {% endif %} {% if source_location %}
+                      {% endif %}
+                      <!-- prettier-ignore -->
+                      {% if source_location %}
                       <br />
                       <span
                         ><small
