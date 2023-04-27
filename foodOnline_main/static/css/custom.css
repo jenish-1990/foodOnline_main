@@ -28,3 +28,7 @@
   font-size: 12px;
   cursor: pointer;
 }
+
+.menu-itam-holder .menu-itam-list .image-holder + .text-holder {
+  width: calc(100% - 280px);
+}

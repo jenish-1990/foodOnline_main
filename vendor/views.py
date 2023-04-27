@@ -184,3 +184,4 @@ def delete_food(request, pk=None):
     food.delete()
     messages.success(request, 'Food Item has been deleted successfully!')
     return redirect('fooditems_by_category', food.category.id)
+
