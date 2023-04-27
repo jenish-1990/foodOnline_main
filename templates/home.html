@@ -151,7 +151,7 @@
               <li class="has-border">
                 <figure>
                   {% if vendor.user_profile.profile_picture %}
-                  <a href="#"
+                  <a href="{% url 'vendor_detail' vendor.vendor_slug %}"
                     ><img
                       src="{{ vendor.user_profile.profile_picture.url }}"
                       height="125"
@@ -159,7 +159,7 @@
                       alt=""
                   /></a>
                   {% else %}
-                  <a href="#"
+                  <a href="{% url 'vendor_detail' vendor.vendor_slug %}"
                     ><img
                       src="{% static 'images/default-profile.png' %}"
                       height="125"
@@ -204,7 +204,7 @@
                 <div class="list-post featured">
                   <div class="img-holder">
                     <figure>
-                      <a href="#">
+                      <a href="{% url 'vendor_detail' vendor.vendor_slug %}">
                         {% if vendor.user_profile.profile_picture %}
                         <img
                           src="{{ vendor.user_profile.profile_picture.url }}"
@@ -233,7 +233,9 @@
                   <div class="text-holder">
                     <div class="post-title">
                       <h5>
-                        <a href="#}">{{ vendor }}</a>
+                        <a href="{% url 'vendor_detail' vendor.vendor_slug %}"
+                          >{{ vendor }}</a
+                        >
                       </h5>
                     </div>
                     <!-- prettier-ignore -->
