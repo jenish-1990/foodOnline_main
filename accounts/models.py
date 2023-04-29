@@ -7,8 +7,8 @@ from django.contrib.gis.geos import Point
 
 
 # Create your models here.
-# What is BaseUserManager: It will allow you to edit the way how the users and suoerusers are created
-#                          It also gives a methid to normalize the email addresses
+# What is BaseUserManager: It will allow you to edit the way how the users and superusers are created
+#                          It also gives a method to normalize the email addresses
 # What is AbstractBaseUser: We get full control of editing the whole custom user model, including authentication functionality
 
 class UserManager(BaseUserManager): # contains methods
