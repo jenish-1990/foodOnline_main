@@ -166,8 +166,9 @@ DEFAULT_FROM_EMAIL = 'foodOnline Marketplace <akhedjenish123@gmail.com>'
 
 GOOGLE_API_KEY = config('GOOGLE_API_KEY')
 
-GDAL_LIBRARY_PATH = '/opt/homebrew/lib/libgdal.dylib'
-GEOS_LIBRARY_PATH = '/opt/homebrew/lib/libgeos_c.dylib'
+if DEBUG==True:
+    GDAL_LIBRARY_PATH = '/opt/homebrew/lib/libgdal.dylib'
+    GEOS_LIBRARY_PATH = '/opt/homebrew/lib/libgeos_c.dylib'
 
 PAYPAL_CLIENT_ID = config('PAYPAL_CLIENT_ID',)
 
