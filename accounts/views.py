@@ -114,7 +114,7 @@ def registerVendor(request):
         'form': form,
         'v_form': v_form,
     }
-
+    
     return render(request, 'accounts/registerVendor.html', context)
 
 def activate(request, uidb64, token):
